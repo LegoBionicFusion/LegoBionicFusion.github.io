@@ -1,1 +1,1 @@
-window.location.href="map.html";
+window.location.href="http://legobionicfusion.github.io/map.html";
