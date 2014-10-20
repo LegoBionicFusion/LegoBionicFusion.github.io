@@ -7,7 +7,7 @@ body
 #nav
   {
     background-color:#000000;
-    height:75px;
+    height:100px;
     -moz-border-radius:0px 0px 80px/100px 0px;
     border-radius:0px 0px 80px/100px 0px;
     position:fixed;
