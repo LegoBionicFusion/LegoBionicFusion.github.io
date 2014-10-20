@@ -19,7 +19,7 @@ body
     padding-left:40;
     padding-right:40;
     float:left;
-    vertical-align:bottom;
+    vertical-align:text-bottom;
   }
 #maplinkbox
   {
