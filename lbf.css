@@ -14,7 +14,10 @@ body
     right:0;
   }
 
-
+.navitem
+  {
+    float:left;
+  }
 #maplinkbox
   {
     text-align:center;
