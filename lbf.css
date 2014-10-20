@@ -5,7 +5,9 @@ body
 
 #maplink
   {
+    text-align:center;
     text-decoration:none;
     font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;  
+    font-size:20;
     color:#000000;
   }
