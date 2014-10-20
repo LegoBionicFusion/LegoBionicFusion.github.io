@@ -15,10 +15,11 @@ body
 
 .navitem
   {
+    position:relative;
     padding-left:40;
     padding-right:40;
     float:left;
-    vertical-align:middle;
+    bottom:10px;
   }
 #maplinkbox
   {
