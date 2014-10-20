@@ -16,6 +16,8 @@ body
 
 .navitem
   {
+    bottom: 10px;
+    padding-left:40;
     float:left;
   }
 #maplinkbox
