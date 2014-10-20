@@ -1,4 +1,9 @@
 body
   {
     background-color:#66ff66;
-}
+  }
+
+#maplink
+  {
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;  
+  }
