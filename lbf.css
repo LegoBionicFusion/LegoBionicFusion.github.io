@@ -28,7 +28,12 @@ body
   {
     color: #ffffff;
     text-decoration: none;
+    
+.navlink:hover
+  {
+    color:#ffff00;
   }
+    
   
 #maplinkbox
   {
