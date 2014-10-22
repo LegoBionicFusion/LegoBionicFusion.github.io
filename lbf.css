@@ -21,7 +21,7 @@ body
   {
     position: relative;
     text-align: center;
-    width: 145px;
+    width: 150px;
     padding-top: 30px;
     padding-bottom: 20px;
     float: left;
@@ -38,7 +38,7 @@ body
   #Achievements
     {
       border-radius: 20px 0px 100px 0px;
-      width: 200px;
+      width: 195px;
     }
   
 .navlink
