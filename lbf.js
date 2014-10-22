@@ -1,9 +1,9 @@
-function switchColor()
+function switchColor(linkId)
   {
-    document.getElementById("navlink1").style.color="#000000";
+    document.getElementById(linkId + "link").style.color="#000000";
   }
   
-function switchColorBack()
+function switchColorBack(linkId)
   {
-    document.getElementById("navlink1").style.color="#ffffff";
+    document.getElementById(linkId + "link").style.color="#ffffff";
   }
