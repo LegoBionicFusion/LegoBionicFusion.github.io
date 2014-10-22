@@ -26,6 +26,7 @@ body
     float: left;
     top: 10px;
     bottom: 10px;
+    border-radius: 20px;
   }
   
   .navitem:hover
