@@ -24,6 +24,7 @@ body
     float: left;
     top: 30px;
     height: 40px;
+    vertical-align:middle;
   }
   
   .navitem:hover
@@ -35,7 +36,6 @@ body
   {
     color: #ffffff;
     text-decoration: none;
-    vertical-align: middle;
   }
   
   
