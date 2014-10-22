@@ -19,8 +19,8 @@ body
 .navitem
   {
     position: relative;
-    padding-left: 40px;
-    padding-right: 40px;
+    text-align: center;
+    width: 120px;
     padding-top: 30px;
     padding-bottom: 20px;
     float: left;
