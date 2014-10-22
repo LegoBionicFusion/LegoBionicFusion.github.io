@@ -9,9 +9,9 @@ body
   {
     background-color: #000000;
     height: 80px;
-    -moz-border-radius: 0px 0px 80px/100px 0px;
+    -moz-border-radius: 0px 0px 100px 0px;
     border-radius: 0px 0px 100px 0px;
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     width: 800px;
@@ -33,6 +33,11 @@ body
   .navitem:hover
     {
       background-color:#ffffff;
+    }
+  
+  #Achievements
+    {
+      border-radius: 0px 0px 100px 0px;
     }
   
 .navlink
