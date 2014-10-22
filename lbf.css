@@ -22,9 +22,9 @@ body
     padding-left: 40;
     padding-right: 40;
     float: left;
-    top: 30px;
+    top: 10px;
+    bottom:10px;
     height: 60px;
-    vertical-align:middle;
   }
   
   .navitem:hover
