@@ -14,7 +14,7 @@ body
     position: fixed;
     top: 0;
     left: 0;
-    width: 800px;
+    width: 810px;
   }
 
 .navitem
@@ -37,7 +37,7 @@ body
   
   #Achievements
     {
-      border-radius: 20px 0px 90/100px 0px;
+      border-radius: 20px 0px 100px 0px;
       width: 200px;
     }
   
