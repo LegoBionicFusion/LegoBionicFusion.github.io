@@ -19,11 +19,13 @@ body
 .navitem
   {
     position: relative;
-    padding-left: 40;
-    padding-right: 40;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30;
+    padding-bottom: 30;
     float: left;
     top: 10px;
-    bottom:10px;
+    bottom: 10px;
     height: 60px;
   }
   
