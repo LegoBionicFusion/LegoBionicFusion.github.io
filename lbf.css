@@ -24,7 +24,7 @@ body
     width: 150px;
     padding-top: 30px;
     padding-bottom: 20px;
-    float: left;
+    /*float: left;*/
     top: 10px;
     bottom: 10px;
     border-radius: 20px 20px 0px 0px;
