@@ -19,7 +19,7 @@ body
 
 .navitem
   {
-    position:relative;
+    position:absolute;
     text-align: center;
     width: 150px;
     padding-top: 30px;
@@ -29,9 +29,6 @@ body
     bottom: 10px;
     border-radius: 20px 20px 0px 0px;
   }
-  
- #Home {position:fixed;}
- #AboutUs {position:fixed;}
   
   .navitem:hover
     {
