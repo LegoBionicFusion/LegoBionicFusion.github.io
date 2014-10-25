@@ -1,8 +1,22 @@
+@font-face
+	{
+		font-family: roboto;
+		src: url(Roboto_v1.2/Roboto/Roboto-Thin.ttf);	
+	}
+
+@font-face 
+  {
+	font-family: educationalFont;
+	src: url(kimberly-geswein_kg-lego-house/KGLegoHouse.ttf);
+  }
+
+
 body
   {
     background-color:#98FB98;
     color: #ffffff;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;  
+    font-family: roboto;
+    font-weight: bold;
   }
 
 #nav
@@ -22,6 +36,7 @@ body
     -moz-border-radius: 0px 0px 100px 0px;
     border-radius: 0px 0px 180px 0px;
     width: 100%;
+    -webkit-box-shadow: 0px 0px 20px;
   }
 
 
@@ -76,8 +91,6 @@ body
     padding-top:200px;
     padding-left:20%;
     padding-right:20%;
-    padding-left:15%;
-    padding-right:15%;
     padding-top:80px;
     padding-bottom:80px;
     top:100px;
@@ -97,15 +110,33 @@ body
   {
   	position:relative;
     text-decoration: none;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;  
     font-size: 30px;
     color: #000000;
+    font-family: educationalFont;
   }
   
 #mapPic
 	{
 		height:300px;
 		width:300px;
-		border:1px solid black;
 		border-radius:200px;
+		-webkit-box-shadow: 0 0 8px rgba(0,0,0, 1);
+		box-shadow: 0 0 10px rgba(0,0,0, 1);
+	}
+	
+#sliderDiv
+	{
+		margin-top:auto;
+		background-color:black;
+		text-align:center;
+		padding: 30px 0px 30px 0px;
+		border-radius:0px 0px 30px 0px;
+	}
+	
+#map
+	{
+		top:80px;
+		height:540px;
+		width:80%;
+		left:10%;
 	}

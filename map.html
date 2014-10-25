@@ -2,13 +2,15 @@
 <head>
 <title>Geopoly Interactive Map</title>
  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+ <link rel="stylesheet" href="lbf.css" />
 </head>
 <body>
  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-<div id='sliderdiv' style='height: 80px;text-align: center; font-size: 30px; padding-top: 20px'>
+<div id="nav"><div id='sliderDiv'>
 Year: &nbsp; &nbsp;
 <input type="range" style="width: 600px" min='1000' max='2000' value='1000' oninput="showValue(this.value)"/>
 <span id="range">1000</span>
+</div></div>
 <script>
 
 	
@@ -40,7 +42,7 @@ Year: &nbsp; &nbsp;
 </script>
 <br />
 </div>
-<div id="map" style="height: 540px; width: 1200px;"><div>
+<div id="map"></div>
 <script>
 
 
