@@ -139,4 +139,6 @@ body
 		height:540px;
 		width:80%;
 		left:10%;
+		-webkit-box-shadow:0 0 10px rgba(0,255,0, 1);
+		box-shadow:0 0 10px rgba(0,255,0, 1);
 	}
