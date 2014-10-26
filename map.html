@@ -3,46 +3,19 @@
 <title>Geopoly Interactive Map</title>
  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
  <link rel="stylesheet" href="lbf.css" />
+ <link rel="icon" href="favicon.ico" />
 </head>
 <body>
  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-<div id="nav"><div id='sliderDiv'>
+ <script src="lbf.js"></script>
+ <div id="nav">
+ <div id='sliderDiv'>
 Year: &nbsp; &nbsp;
-<input type="range" style="width: 600px" min='1000' max='2000' value='1000' oninput="showValue(this.value)"/>
+<input type="range" style="width: 600px;" min='1000' max='2000' value='1000' oninput="showValue(this.value)"/>
 <span id="range">1000</span>
 </div></div>
-<script>
-
-	
-	function showValue(newValue)
-		{
-		
-			
-			var year=newValue;
-			document.getElementById("range").innerHTML=year;
-			function configureEvent(event, date)
-		
-			{
-				if (year >= date)
-					{
-						event.addTo(map);
-				}
-			
-				else 
-					{
-						map.removeLayer(event);
-				}
-			}
-			configureEvent(columbusLeft, 1492);
-			configureEvent(columbusArrived, 1492);
-			configureEvent(columbusJourney, 1492);
-			configureEvent(gutenberg, 1450);
-		}
-		
-</script>
-<br />
-</div>
-<div id="map"></div>
+<div id="modeSwitch" onclick="changeMode()"><span id="modeHeading">Mode</span><br /><br /><span id="mode">Free Browse</span></div>
+<div id="mapContainer"><div id="map"></div></div>
 <script>
 
 
