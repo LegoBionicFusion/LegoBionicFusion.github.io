@@ -24,17 +24,24 @@ function showValue(newValue)
 function changeMode()
 	{
 		if (document.getElementById("mode").innerHTML === "Free Browse"){
-			document.getElementById("mode").innerHTML = "Game";
+			document.getElementById("mode").innerHTML = "Challenge";
 			if (document.getElementById("modeSwitch")){
-			document.getElementById("modeSwitch").id = "gameMode";}
+			document.getElementById("modeSwitch").id = "challengeMode";}
 			else {
-			document.getElementById("freeBrowse").id = "gameMode";}
-			document.getElementById("mapContainer").style.padding="0px 100px 0px 100px";
-		}
+			document.getElementById("freeBrowse").id = "challengeMode";}
+			if (document.getElementById("mapContainer")){
+			document.getElementById("mapContainer").id = "mapContainerSmall";}
+			else {
+			document.getElementById("mapContainerBig").id = "mapContainerSmall";}
+			document.getElementById("history").style.visibility = "visible";
+			document.getElementById("facts").style.visibility = "visible";
+			document.getElementById("country").style.visibility = "visible";
+			
+			}
 		
-		else if (document.getElementById("mode").innerHTML === "Game"){
+		else if (document.getElementById("mode").innerHTML === "Challenge"){
 			document.getElementById("mode").innerHTML = "Free Browse";
-			document.getElementById("gameMode").id = "freeBrowse";
-			document.getElementById("mapContainer").style.padding="0px 0px 0px 0px";
+			document.getElementById("challengeMode").id = "freeBrowse";
+			document.getElementById("mapContainerSmall").id = "mapContainerBig";
 			}
 }	

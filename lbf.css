@@ -30,22 +30,42 @@
     to {background: blue;color:yellow}
     }
     
+@-webkit-keyframes shortenMapLength {
+	from {padding: 0px 0px 0px 0px;}
+	to {padding: 0px 150px 0px 150px;}
+	}
+    
+@keyframes shortenMapLength {
+	from {padding: 0px 0px 0px 0px;}
+	to {padding: 0px 150px 0px 150px;}
+	}
+	
+@-webkit-keyframes lengthenMapLength {
+	from {padding: 0px 150px 0px 150px;}
+	to {padding: 0px 0px 0px 0px;}
+	}
+	
+@keyframes lengthenMapLength {
+	from {padding: 0px 150px 0px 150px;}
+	to {padding: 0px 0px 0px 0px;}
+	}
+    
 body
   {
     background-color:#98FB98;
-    color: #ffffff;
     font-family: roboto;
     font-weight: bold;
   }
 
 #nav
   {
+  	color:#ffffff;
     position:fixed;
   	height:80px;
   	width:800px;
   	top: 0;
   	left: 0;
-  	z-index:1;
+  	z-index:4;
   	float:left;
   }
   
@@ -85,7 +105,6 @@ body
   #Achievementslink:hover 
   {
   	background-color:#ffffff;
-  	color:#000000;
   }
   
 #container a
@@ -147,9 +166,10 @@ body
 		left:0;
 		position:fixed;
 		color:yellow;
+		z-index:3;
 	}
 
-#gameMode
+#challengeMode
 	{
 		padding:10px;
 		text-align:center;
@@ -163,6 +183,7 @@ body
 		-webkit-animation: changeColor 1s;
 		background-color:yellow;
 		color:blue;
+		z-index:3;
 	}
 
 #freeBrowse
@@ -179,6 +200,7 @@ body
 		-webkit-animation: changeColor2 1s;
 		background-color:blue;
 		color:yellow;
+		z-index:3;
 	}
 
 #modeHeading
@@ -207,18 +229,81 @@ body
 		padding: 30px 0px 30px 0px;
 		border-radius:0px 0px 30px 0px;
 	}
-	
-b
- 	{
- 		color:#000000;
- 	}
-	
+
 #map
 	{
+		min-width: 540px;
 		top:80px;
 		height:540px;
 		width:80%;
 		left:10%;
 		-webkit-box-shadow:0 0 10px rgba(0,0,255, 1);
 		box-shadow:0 0 10px rgba(0,0,255, 1);
+		z-index:2;
+	}
+	
+#mapContainerSmall
+	{
+		-webkit-animation: shortenMapLength 2s;
+		animation: shortenMapLength 2s;
+		padding: 0px 150px 0px 150px;
+	}
+
+#mapContainerBig
+	{
+		-webkit-animation: lengthenMapLength 2s;
+		animation: lengthenMapLength 2s;
+		padding: 0px 0px 0px 0px;
+	}
+	
+#history
+	{
+		visibility:hidden;
+		position:fixed;
+		text-align:center;
+		background-color:orange;
+		color:blue;
+		padding-top:50px;
+		padding-bottom:50px;
+		font-size:15px;
+		border-radius: 0px 20px 20px 0px;
+		width:110px;
+		top:100px;
+		right:125px;
+		z-index:1;
+	}
+	
+#facts
+	{
+		visibility:hidden;
+		position:fixed;
+		text-align:center;
+		color:orange;
+		background-color:blue;
+		padding-top:50px;
+		padding-bottom:50px;
+		font-size:15px;
+		border-radius: 0px 20px 20px 0px;
+		width:110px;
+		bottom: 100px;
+		right: 125px;
+		z-index:1;
+	}
+	
+#country
+	{	
+		visibility:hidden;
+		position:fixed;
+		text-align:center;
+		vertical-align:middle;
+		color:yellow;
+		background-color:purple;
+		font-size:15px;
+		border-radius: 20px 0px 0px 20px;
+		width:110px;
+		bottom: 100px;
+		top:100px;
+		left: 125px;
+		z-index:1;
+		padding-top:120px;
 	}
