@@ -261,8 +261,8 @@ body
 		visibility:hidden;
 		position:fixed;
 		text-align:center;
-		background-color:orange;
-		color:blue;
+		background-color:blue;
+		color:orange;
 		padding-top:50px;
 		padding-bottom:50px;
 		font-size:15px;
@@ -273,23 +273,33 @@ body
 		z-index:1;
 	}
 	
+#history:hover
+	{
+		background-color:purple;
+	}
+	
 #facts
 	{
 		visibility:hidden;
 		position:fixed;
 		text-align:center;
 		color:orange;
-		background-color:blue;
+		background-color:yellow;
 		padding-top:50px;
 		padding-bottom:50px;
 		font-size:15px;
 		border-radius: 0px 20px 20px 0px;
 		width:110px;
-		bottom: 100px;
+		top: 300px;
 		right: 125px;
 		z-index:1;
 	}
 	
+#facts:hover
+	{
+		background-color:#99FF33;
+	}
+
 #country
 	{	
 		visibility:hidden;
@@ -297,13 +307,18 @@ body
 		text-align:center;
 		vertical-align:middle;
 		color:yellow;
-		background-color:purple;
+		background-color:red;
 		font-size:15px;
 		border-radius: 20px 0px 0px 20px;
 		width:110px;
-		bottom: 100px;
 		top:100px;
 		left: 125px;
 		z-index:1;
-		padding-top:120px;
+		padding-top:150px;
+		padding-bottom:150px;
+	}
+
+#country:hover
+	{
+		background-color:orange
 	}
