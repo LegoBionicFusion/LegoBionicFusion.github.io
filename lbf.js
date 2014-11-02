@@ -49,10 +49,18 @@ function changeMode()
 			}
 }	
 
-function question()
+function question(type)
 	{
 		document.getElementById("placeHolder").id = "questionBox";
 		document.getElementById("questionBox").style.visibility = "visible";
+		if (type == 'history')
+			{
+				document.getElementById("changeQuestion").innerHTML = "Who invented the first airplane and when?";
+			}
+		else if (type == 'facts')
+			{
+				document.getElementById("changeQuestion").innerHTML = "Which one of these countries has the monetary unit of a Peso?";
+			}
 	}
 	
 function closeQuestion()

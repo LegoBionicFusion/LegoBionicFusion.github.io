@@ -8,9 +8,9 @@
 <body>
 <div id="placeHolder">
 	<div id="question">
-		<div id="content">(Question)
+		<div id="content"><div id="changeQuestion">(Question)</div>
 			<br /><br /><br /><br /><br /><br />
-				<input type="button" id='closeButton' value="Cancel" onclick="closeQuestion();">
+				<div id='closeButton' onclick="closeQuestion();">Cancel</div>
 			</input>
 		</div>
 	</div>
@@ -25,9 +25,9 @@ Year: &nbsp; &nbsp;
 </div></div>
 <div id="modeSwitch" onclick="changeMode()"><span id="modeHeading">Mode</span><br /><br /><span id="mode">Free Browse</span></div>
 <div id="mapContainer"><div id="map"></div>
-<div id="country" onclick="question();">Country Challenge</div>
-<div id="history" onclick="question();">History Challenge</div>
-<div id="facts">Facts Challenge</div>
+<div id="country">Country Challenge</div>
+<div id="history" onclick="question('history');">History Challenge</div>
+<div id="facts" onclick="question('facts');">Facts Challenge</div>
 </div>
 <script>
 
