@@ -43,5 +43,20 @@ function changeMode()
 			document.getElementById("mode").innerHTML = "Free Browse";
 			document.getElementById("challengeMode").id = "freeBrowse";
 			document.getElementById("mapContainerSmall").id = "mapContainerBig";
+			document.getElementById("history").style.visibility = "hidden";
+			document.getElementById("facts").style.visibility = "hidden";
+			document.getElementById("country").style.visibility = "hidden";
 			}
 }	
+
+function question()
+	{
+		document.getElementById("placeHolder").id = "questionBox";
+		document.getElementById("questionBox").style.visibility = "visible";
+	}
+	
+function closeQuestion()
+	{
+		document.getElementById("questionBox").style.visibility = "hidden";
+		document.getElementById("questionBox").id = "placeHolder";
+	}

@@ -6,6 +6,15 @@
  <link rel="icon" href="favicon.ico" />
 </head>
 <body>
+<div id="placeHolder">
+	<div id="question">
+		<div id="content">(Question)
+			<br /><br /><br /><br /><br /><br />
+				<input type="button" id='closeButton' value="Cancel" onclick="closeQuestion();">
+			</input>
+		</div>
+	</div>
+</div>
  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
  <script src="lbf.js"></script>
  <div id="nav">
@@ -16,8 +25,8 @@ Year: &nbsp; &nbsp;
 </div></div>
 <div id="modeSwitch" onclick="changeMode()"><span id="modeHeading">Mode</span><br /><br /><span id="mode">Free Browse</span></div>
 <div id="mapContainer"><div id="map"></div>
-<div id="country">Country Challenge</div>
-<div id="history">History Challenge</div>
+<div id="country" onclick="question();">Country Challenge</div>
+<div id="history" onclick="question();">History Challenge</div>
 <div id="facts">Facts Challenge</div>
 </div>
 <script>
@@ -64,5 +73,6 @@ var columbusJourney = L.polygon(
 map.removeLayer(columbusJourney);
 
 </script>
+
 </body>
 </html>
