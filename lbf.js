@@ -86,6 +86,7 @@ function question(type)
 	{
 		document.getElementById("placeHolder").id = "questionBox";
 		document.getElementById("questionBox").style.visibility = "visible";
+		document.getElementById('textField').focus();
 		if (type == 'history')
 			{
 				document.getElementById("changeQuestion").innerHTML = setup;
@@ -124,9 +125,31 @@ function closeQuestion()
 function submit()
 	{
 		var response = document.getElementById("textField").value;
+		document.getElementById('textField').value = null;
 		if (validation.test(response))
 			{
 				pointsIncrease();
+				document.getElementById("correct").id = "correctShown";
+				setTimeout(function()
+				{
+					document.getElementById("correctShown").id = "correct";
+				},
+				3000);
+			}
+			
+		else
+			{
+				document.getElementById("correct").id = "correctShown";
+				document.getElementById("correctShown").innerHTML = "Wrong :(";
+				document.getElementById("correctShown").style.color = "red";
+				setTimeout(function()
+				{
+					document.getElementById("correctShown").id = "correct";
+					document.getElementById("correct").style.color = "#98FB98";
+					document.getElementById("correct").innerHTML = "Correct!"
+					
+				},
+				3000);
 			}
 	}
 	

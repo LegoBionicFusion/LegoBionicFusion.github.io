@@ -9,9 +9,9 @@
 <div id="placeHolder">
 	<div id="question">
 		<br /><span id="score">0</span> Treasures
-		<div id="content"><div id="changeQuestion">(Question)</div>
-			<div id='space'><br /><br /></div>
-				<input id='textField' onKeyPress="if (event.keyCode==13){submit()}"/>&nbsp;&nbsp;&nbsp;<input type="button" value="Submit" onclick="submit()" />
+		<br /><br /><div id="correct">Correct!</div>
+			<div id="content"><div id="changeQuestion">(Question)</div><br /><br />
+				<input id='textField' onKeyPress="if (event.keyCode==13){submit()}" autofocus/>&nbsp;&nbsp;&nbsp;<input type="button" value="Submit" onclick="submit()" />
 					<br /><br />
 				<div id='closeButton' onclick="closeQuestion();">Cancel</div>
 			</input>
