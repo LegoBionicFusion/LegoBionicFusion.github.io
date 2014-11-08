@@ -1,3 +1,4 @@
+
 function showValue(newValue)
 	{			
 		var year=newValue;
@@ -43,13 +44,6 @@ function changeMode()
 			document.getElementById("mode").innerHTML = "Free Browse";
 			document.getElementById("challengeMode").id = "freeBrowse";
 			document.getElementById("mapContainerSmall").id = "mapContainerBig";
-			setTimeout(function()
-				{
-					document.getElementById("history").style.visibility = "hidden";
-					document.getElementById("facts").style.visibility = "hidden";
-					document.getElementById("country").style.visibility = "hidden";
-				},
-				2000);
 			
 			}
 }	
@@ -63,7 +57,7 @@ if (/rigged$/.test(url))
 var validation;
 
 var historyQuestions = [
-	['(Question 1)'],
+	['What was the name of the major Japanese earthquake in 2011?', /^(T|t)ohoku/],
 	['(Question 2)'],
 	['(Question 3)']
 ]
@@ -99,6 +93,7 @@ function question(type)
 					{
 						var qIndex = Math.floor(Math.random() * 3);
 						document.getElementById("changeQuestion").innerHTML = historyQuestions[qIndex][0];
+						validation = historyQuestions[qIndex][1];
 					}
 			}
 		else if (type == 'facts')
@@ -112,6 +107,7 @@ function question(type)
 					{
 						var qIndex = Math.floor(Math.random() * 3);
 						document.getElementById("changeQuestion").innerHTML = factsQuestions[qIndex][0];
+						validation = factsQuestions[qIndex][1];
 					}
 			}
 	}
@@ -135,6 +131,8 @@ function submit()
 					document.getElementById("correctShown").id = "correct";
 				},
 				3000);
+				document.getElementById("questionBox").id = "placeHolder";
+				question('history');
 			}
 			
 		else
@@ -152,4 +150,5 @@ function submit()
 				3000);
 			}
 	}
+
 	
