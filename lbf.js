@@ -86,6 +86,7 @@ function initialQuestion()
 	
 function question(type)
 	{
+		alert("hi");
 		if (type == 'history')
 			{
 				document.getElementById("changeQuestion").innerHTML = setup;
