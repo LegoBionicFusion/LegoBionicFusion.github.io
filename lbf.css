@@ -160,6 +160,7 @@ body
 #mainText
     {
     	font-family: educationalFont;
+    	line-height: 150%;
     }
 
 #maplinkbox
