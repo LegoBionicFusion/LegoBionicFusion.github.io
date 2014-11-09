@@ -132,7 +132,7 @@ function submit()
 					document.getElementById("correctShown").id = "correct";
 				},
 				3000);
-
+				
 			}
 			
 		else
@@ -150,7 +150,7 @@ function submit()
 				3000);
 			}
 			document.getElementById("questionBox").id = "placeHolder";
-			question('history');
+			question(type);	
 	}
 
 	
