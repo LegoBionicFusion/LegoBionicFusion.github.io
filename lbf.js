@@ -115,6 +115,7 @@ function question(type)
 						validation = factsQuestions[qIndex][1];
 					}
 			}
+		return type;
 	}
 	
 function closeQuestion()
