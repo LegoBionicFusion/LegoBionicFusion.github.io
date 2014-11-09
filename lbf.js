@@ -64,8 +64,8 @@ var historyQuestions = [
 ]
 
 var factsQuestions = [
-	['(Question 1)'],
-	['(Question 2)'],
+	['Name a major language spoken in Brazil', /^(p|P)ortu(g|gu)ese$/],
+	['What is the currency of India?', /^(r|R)upee$/],
 	['(Question 3)']
 ]
 
@@ -94,9 +94,19 @@ function question(type)
 					}
 				else 
 					{
-						var qIndex = Math.floor(Math.random() * 3);
-						document.getElementById("changeQuestion").innerHTML = historyQuestions[qIndex][0];
-						validation = historyQuestions[qIndex][1];
+						if (historyQuestions.length == 0)
+							
+							{
+								closeQuestion();
+							}
+							
+						else
+							{
+								var qIndex = Math.floor(Math.random() * historyQuestions.length);
+								document.getElementById("changeQuestion").innerHTML = historyQuestions[qIndex][0];
+								validation = historyQuestions[qIndex][1];
+								historyQuestions.splice(qIndex, 1);
+							}
 					}
 			}
 		else if (type == 'facts')
@@ -108,9 +118,19 @@ function question(type)
 					}
 				else 
 					{
-						var qIndex = Math.floor(Math.random() * 3);
-						document.getElementById("changeQuestion").innerHTML = factsQuestions[qIndex][0];
-						validation = factsQuestions[qIndex][1];
+						if (factsQuestions.length == 0)
+							
+							{
+								closeQuestion();
+							}
+							
+						else
+							{
+								var qIndex = Math.floor(Math.random() * factsQuestions.length);
+								document.getElementById("changeQuestion").innerHTML = factsQuestions[qIndex][0];
+								validation = factsQuestions[qIndex][1];
+								factsQuestions.splice(qIndex, 1);
+							}
 					}
 			}
 	}
