@@ -154,9 +154,15 @@ function submit()
 				},
 				3000);
 			}
+			if (a=='history'){
 			var qIndex = Math.floor(Math.random() * 3);
 			document.getElementById("changeQuestion").innerHTML = historyQuestions[qIndex][0];
-			validation = historyQuestions[qIndex][1];
+			validation = historyQuestions[qIndex][1];}
+			else if(a=='facts'){
+				var qIndex = Math.floor(Math.random() * 3);
+			document.getElementById("changeQuestion").innerHTML = factsQuestions[qIndex][0];
+			validation = factsQuestions[qIndex][1];}
+			}
 	}
 
 	
