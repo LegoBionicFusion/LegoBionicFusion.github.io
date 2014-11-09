@@ -154,7 +154,7 @@ function submit()
 				},
 				3000);
 			}
-			question(type);	
+			question('history');	
 	}
 
 	
