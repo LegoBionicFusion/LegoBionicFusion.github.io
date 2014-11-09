@@ -84,7 +84,7 @@ function initialQuestion()
 		document.getElementById('textField').focus();
 	}
 	
-function question(type)
+function question()
 	{
 		if (type == 'history')
 			{
@@ -153,7 +153,7 @@ function submit()
 				},
 				3000);
 			}
-			question('history');
+			question(type);
 	}
 
 	
