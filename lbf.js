@@ -86,7 +86,6 @@ function initialQuestion()
 	
 function question(type)
 	{
-		var type_ = type;
 		if (type == 'history')
 			{
 				document.getElementById("changeQuestion").innerHTML = setup;
@@ -154,7 +153,8 @@ function submit()
 				},
 				3000);
 			}
-			question(type_);	
+			document.getElementById("placeHolder").id = "questionBox";
+			question(type_);
 	}
 
 	
