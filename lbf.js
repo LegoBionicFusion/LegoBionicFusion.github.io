@@ -77,16 +77,12 @@ function pointsIncrease()
 		document.getElementById("score").innerHTML = points;
 	}
 
-function initialQuestion()
+	
+function question(type)
 	{
 		document.getElementById("placeHolder").id = "questionBox";
 		document.getElementById("questionBox").style.visibility = "visible";
 		document.getElementById('textField').focus();
-	}
-	
-function question(type)
-	{
-		alert("hi");
 		if (type == 'history')
 			{
 				document.getElementById("changeQuestion").innerHTML = setup;
@@ -154,15 +150,9 @@ function submit()
 				},
 				3000);
 			}
-			if (a=='history'){
-			var qIndex = Math.floor(Math.random() * 3);
-			document.getElementById("changeQuestion").innerHTML = historyQuestions[qIndex][0];
-			validation = historyQuestions[qIndex][1];}
-			else if(a=='facts'){
-				var qIndex = Math.floor(Math.random() * 3);
-			document.getElementById("changeQuestion").innerHTML = factsQuestions[qIndex][0];
-			validation = factsQuestions[qIndex][1];}
-			}
+			document.getElementById("questionBox").id = "placeHolder";
+			question("history")
+			
 	}
 
 	
