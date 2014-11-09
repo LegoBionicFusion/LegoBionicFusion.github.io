@@ -80,6 +80,7 @@ function pointsIncrease()
 	
 function question(type)
 	{
+		window.globalType = type;
 		document.getElementById("placeHolder").id = "questionBox";
 		document.getElementById("questionBox").style.visibility = "visible";
 		document.getElementById('textField').focus();
@@ -151,7 +152,7 @@ function submit()
 				3000);
 			}
 			document.getElementById("questionBox").id = "placeHolder";
-			question("history")
+			question(window.globalType);
 			
 	}
 
