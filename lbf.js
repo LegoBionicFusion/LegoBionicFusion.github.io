@@ -84,7 +84,7 @@ function initialQuestion()
 		document.getElementById('textField').focus();
 	}
 	
-function question()
+function question(type)
 	{
 		if (type == 'history')
 			{
