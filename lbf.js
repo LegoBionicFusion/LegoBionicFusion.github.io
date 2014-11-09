@@ -154,7 +154,7 @@ function submit()
 				3000);
 			}
 			document.getElementById("placeHolder").id = "questionBox";
-			question(type_);
+			question('history');
 	}
 
 	
