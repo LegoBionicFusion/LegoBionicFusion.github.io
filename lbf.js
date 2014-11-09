@@ -58,8 +58,9 @@ var validation;
 
 var historyQuestions = [
 	['What was the name of the major Japanese earthquake in 2011?', /^(T|t)ohoku/],
-	['(Question 2)'],
-	['(Question 3)']
+	['Who invented the printing press and when?', /(?=.*(g|G)utenberg)(?=.*1455)/],
+	['When was the Taj Mahal completed?', /^1643$/],
+	['In what country did the Chernobyl nuclear disaster occur?', /^(u|U)kraine$/]
 ]
 
 var factsQuestions = [
@@ -131,8 +132,7 @@ function submit()
 					document.getElementById("correctShown").id = "correct";
 				},
 				3000);
-				document.getElementById("questionBox").id = "placeHolder";
-				question('history');
+
 			}
 			
 		else
@@ -149,6 +149,8 @@ function submit()
 				},
 				3000);
 			}
+			document.getElementById("questionBox").id = "placeHolder";
+			question('history');
 	}
 
 	
