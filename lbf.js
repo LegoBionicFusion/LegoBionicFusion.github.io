@@ -77,11 +77,16 @@ function pointsIncrease()
 		document.getElementById("score").innerHTML = points;
 	}
 
-function question(type)
+function initialQuestion()
 	{
 		document.getElementById("placeHolder").id = "questionBox";
 		document.getElementById("questionBox").style.visibility = "visible";
 		document.getElementById('textField').focus();
+	}
+	
+function question(type)
+	{
+	
 		if (type == 'history')
 			{
 				document.getElementById("changeQuestion").innerHTML = setup;
@@ -149,9 +154,7 @@ function submit()
 				},
 				3000);
 			}
-			/*document.getElementById("questionBox").style.visibility = "visible";
-			document.getElementById("questionBox").id = "placeHolder";
-			question(type);*/	
+			question(type);	
 	}
 
 	
