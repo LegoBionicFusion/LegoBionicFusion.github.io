@@ -157,6 +157,11 @@ body
    
   }
 
+#mainText
+    {
+    	font-family: educationalFont;
+    }
+
 #maplinkbox
 	{
 		border: 2px solid black;
