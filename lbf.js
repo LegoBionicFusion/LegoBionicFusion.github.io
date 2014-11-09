@@ -149,6 +149,7 @@ function submit()
 				},
 				3000);
 			}
+			document.getElementById("questionBox").style.visibility = "visible";
 			document.getElementById("questionBox").id = "placeHolder";
 			question(type);	
 	}
