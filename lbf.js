@@ -116,7 +116,6 @@ function question(type)
 						validation = factsQuestions[qIndex][1];
 					}
 			}
-		return type;
 	}
 	
 function closeQuestion()
@@ -155,7 +154,9 @@ function submit()
 				},
 				3000);
 			}
-			question(type);
+			var qIndex = Math.floor(Math.random() * 3);
+			document.getElementById("changeQuestion").innerHTML = historyQuestions[qIndex][0];
+			validation = historyQuestions[qIndex][1];
 	}
 
 	
