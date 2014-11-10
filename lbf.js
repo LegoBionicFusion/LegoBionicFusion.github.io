@@ -121,7 +121,7 @@ function question(type)
 						if (factsQuestions.length == 0)
 							
 							{
-								closeQuestion();
+								setTimeout(closeQuestion(), 3000);
 							}
 							
 						else
