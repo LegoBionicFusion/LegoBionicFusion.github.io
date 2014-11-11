@@ -57,7 +57,7 @@ if (/rigged$/.test(url))
 var validation;
 
 var historyQuestions = [
-	['What was the name of the major Japanese earthquake in 2011?', /^(T|t)ohoku/],
+	['What region of Japan was hit by an earthquake in 2011?', /^(T|t)ohoku/],
 	['Who invented the printing press and when?', /(?=.*(g|G)utenberg)(?=.*1455)/],
 	['When was the Taj Mahal completed?', /^1643$/],
 	['In what country did the Chernobyl nuclear disaster occur?', /^(u|U)kraine$/]
