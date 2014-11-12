@@ -176,4 +176,10 @@ function submit()
 			
 	}
 
+function trackSlider()
+	{
+		var x = window.event.clientX;
+		document.getElementById('slider').value = ((x-80)*(5/3))+1000;
+		showValue(document.getElementById('slider').value);
+	}
 	
