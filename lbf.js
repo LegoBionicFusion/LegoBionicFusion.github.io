@@ -59,7 +59,7 @@ var validation;
 var historyQuestions = [
 	['What region of Japan was hit by an earthquake in 2011?', /^(T|t)ohoku/],
 	['Who invented the printing press and when?', /(?=.*(g|G)utenberg)(?=.*1455)/],
-	['When was the Taj Mahal completed?', /^1643$/],
+	['When was the Taj Mahal completed?', /^1653$/],
 	['In what country did the Chernobyl nuclear disaster occur?', /^(u|U)kraine$/]
 ]
 
