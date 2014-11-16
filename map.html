@@ -23,7 +23,7 @@
  <script src="lbf.js"></script>
  <div id="sliderDiv">
 <div class="navleftright">Year: &nbsp; &nbsp;</div><div onmousedown="trackSlider()" onmousemove="if( /Android|iPhone|webOS|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || setup=='rigged'){trackSlider()}" id="sliderContainer">
-<input type="range" style="width: 600px;" min='1000' max='2000' value='1000' id="slider" oninput="showValue(this.value)"/></div>
+<input type="range" style="width: 600px;" min='1000' max='2014' value='1000' id="slider" oninput="showValue(this.value)"/></div>
 <div class="navleftright"><span id="range">1000</span></div>
 </div>
 <div id="modeSwitch" onclick="changeMode()"><span id="modeHeading">Mode</span><br /><br /><span id="mode">Free Browse</span></div>
@@ -58,23 +58,52 @@ map.setMaxBounds([
 ])
 
 var gutenberg = L.marker([50, 8.2667]).addTo(map);
-gutenberg.bindPopup("<b>Gutenberg invents the printing press<br /><br />1450</b>");
-map.removeLayer(gutenberg);
+gutenberg.bindPopup("<b>Gutenberg invents the printing press<br><br>Johannes Gutenberg invented this during the Renaissance around 1440. The metal blocks could be arranged as desired, and was then coated with ink.<br><br>1450</b>");
 
 var columbusLeft = L.marker([37.228193,-6.893426]).addTo(map);
 columbusLeft.bindPopup("<b>Christopher Columbus departs <br /> on his first voyage from Spain <br /><br /> August 3, 1492</b>")
-map.removeLayer(columbusLeft);
 
 var columbusArrived = L.marker([24.02, -74.28]).addTo(map);
 columbusArrived.bindPopup("<b>Christopher Columbus arrives <br /> in the Americas <br /><br /> October 12, 1492</b>");
-map.removeLayer(columbusArrived);
 
 var columbusJourney = L.polygon(
 	[
 		[37.228193,-6.893426],
 		[24.02, -74.28]
 ]);
+
+var aztecFall = L.marker([19.435, -99.131]).addTo(map);
+aztecFall.bindPopup("<b>The Aztec capital of Tenochtitlan falls to Hern&#225;n Cort&#233;s<br><br>The siege of Tenochtitlan was led by Hern&#225;n Cort&#233;s. Cort&#233;s took charge and demanded tribute and gradually took over the Aztec Empire.<br><br/> 1521</b>");
+
+var tajMahal = L.marker([27.175, 78.0419]).addTo(map);
+tajMahal.bindPopup("<b>The construction of the Taj Mahal is completed by Shah Jahan in Agra, India<br><br>The construction of the Taj Mahal took 2 years. It is located in Agra, India. About 20,000 workers and 1000 elephants were needed to build and move materials for the Taj Mahal.<br><br> 1653</b>");
+
+var constitution = L.marker([39.95, -75.17]).addTo(map);
+constitution.bindPopup("<b>The US Constitution is signed by 39 delegates. The plan for the Constitution was for a stronger federal government with checks and balances and 3 branches. <br><br>Philadelphia, Pennsylvania<br><br>September 17, 1787</b>");
+
+var wrightBros = L.marker([36.025, -75.67]).addTo(map);
+wrightBros.bindPopup("<b>The Wright brothers fly the first airplane. Orville flew the first powered airplane above a beach in North Carolina, which lasted 12 seconds, and it flew 120 feet. The record flight was by Wilbur (lasting 59 seconds and flying 852 feet).<br><br>December 17, 1903</b>");
+
+var maoZedong = L.marker([39.914, 116.4]).addTo(map);
+maoZedong.bindPopup("<b>Mao Zedong declared the People's Republic of China, which ended the civil war between the Communist party and the Nationalist party. <br><br>1949</b>");
+
+var chernobyl = L.marker([51.2722, 30.2242]).addTo(map);
+chernobyl.bindPopup("<b>The Chernobyl disaster was a nuclear accident that occurred in Ukraine. This accident released large quantities of radioactive material which spread all over Europe.<br><br>April 26, 1986</b>");
+
+var tohokuEarthquake = L.marker([38.297, 142.372]).addTo(map);
+tohokuEarthquake.bindPopup("<b>The Tohoku Earthquake was a 9.0 magnitude underwater earthquake which triggered a tsunami off the coast of Japan. The tsunami caused 15,889 deaths.<br><br>March 11, 2011</b>");
+
+map.removeLayer(gutenberg);
+map.removeLayer(columbusLeft);
+map.removeLayer(columbusArrived);
 map.removeLayer(columbusJourney);
+map.removeLayer(aztecFall);
+map.removeLayer(tajMahal);
+map.removeLayer(constitution);
+map.removeLayer(wrightBros);
+map.removeLayer(maoZedong);
+map.removeLayer(chernobyl);
+map.removeLayer(tohokuEarthquake);
 
 </script>
 

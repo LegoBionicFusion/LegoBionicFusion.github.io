@@ -19,6 +19,13 @@ function showValue(newValue)
 		configureEvent(columbusArrived, 1492);
 		configureEvent(columbusJourney, 1492);
 		configureEvent(gutenberg, 1450);
+		configureEvent(aztecFall, 1521);
+		configureEvent(tajMahal, 1653);
+		configureEvent(constitution, 1787);
+		configureEvent(wrightBros, 1903);
+		configureEvent(maoZedong, 1949);
+		configureEvent(chernobyl, 1986);
+		configureEvent(tohokuEarthquake, 2011);
 		
 }
 
@@ -58,7 +65,7 @@ var validation;
 
 var historyQuestions = [
 	['What region of Japan was hit by an earthquake in 2011?', /^(T|t)ohoku/],
-	['Who invented the printing press and when?', /(?=.*(g|G)utenberg)(?=.*1455)/],
+	['Who invented the printing press and when?', /(?=.*(g|G)utenberg)(?=.*145\d)/],
 	['When was the Taj Mahal completed?', /^1653$/],
 	['In what country did the Chernobyl nuclear disaster occur?', /^(u|U)kraine$/]
 ]
@@ -179,7 +186,7 @@ function submit()
 function trackSlider()
 	{
 		var x = window.event.clientX;
-		document.getElementById('slider').value = ((x-80)*(5/3))+1000;
+		document.getElementById('slider').value = ((x-80)*(1007/600))+1001;
 		showValue(document.getElementById('slider').value);
 	}
 	
