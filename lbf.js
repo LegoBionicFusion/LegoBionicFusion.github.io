@@ -67,10 +67,10 @@ var historyQuestions = [
 	['What region of Japan was hit by an earthquake in 2011?', /^(T|t)ohoku/],
 	['Who invented the printing press and when?', /(?=.*(g|G)utenberg)(?=.*145\d)/],
 	['When was the Taj Mahal completed?', /^1653$/],
-	['In what country did the Chernobyl nuclear disaster occur?', /^(u|U)kraine$/]
+	['In what country did the Chernobyl nuclear disaster occur?', /^(u|U)kraine$/],
 	['In what year was the U.S. Constitution signed?', /^1787$/],
-	['Which explorer led the siege of Tenochtitlan?', /((h|H)ernan(?=(c|C)ortes) | (c|C)ortes)/]
-	['Where in the Americas did Columbus land on his first voyage?', /(b|B)ahamas$/]
+	['Which explorer led the siege of Tenochtitlan?', /((h|H)ernan(?=(c|C)ortes) | (c|C)ortes)/],
+	['Where in the Americas did Columbus land on his first voyage?', /(b|B)ahamas$/],
 	['Name the person who declared the Peoples Republic of China.', /^(z|Z)edong)$/]
 ]
 
@@ -81,7 +81,7 @@ var factsQuestions = [
 	['What is the currency of Japan?', /(y|Y)en$/],
 	['What is the capital of Indonesia?', /^(j|J)akarta$/],
 	['Name a major language spoken in Peru.', /^((s|S)panish | (e|E)spanol)$/],
-	['What is the capital of Australia?', /^(c|C)anberra$/],
+	['What is the capital of Australia?', /^(c|C)anberra$/]
 	
 ]
 
