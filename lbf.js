@@ -81,8 +81,6 @@ var factsQuestions = [
 	['What is the currency of Japan?', /(y|Y)en$/],
 	['What is the capital of Indonesia?', /^(j|J)akarta$/],
 	['Name a major language spoken in Peru.', /^((s|S)panish | (e|E)spanol)$/],
-	['What is the capital of Australia?', /^(c|C)anberra$/]
-	
 ]
 
 var points = 0;
