@@ -69,9 +69,9 @@ var historyQuestions = [
 	['When was the Taj Mahal completed?', /^1653$/],
 	['In what country did the Chernobyl nuclear disaster occur?', /^(u|U)kraine$/],
 	['In what year was the U.S. Constitution signed?', /^1787$/],
-	['Which explorer led the siege of Tenochtitlan?', /((h|H)ernan(?=(c|C)ortes) | (c|C)ortes)/],
+	['Which explorer led the siege of Tenochtitlan?', /(c|C)ortes$/],
 	['Where in the Americas did Columbus land on his first voyage?', /(b|B)ahamas$/],
-	['Name the person who declared the Peoples Republic of China.', /^(z|Z)edong)$/]
+	['Name the person who declared the Peoples Republic of China.', /(z|Z)edong$/]
 ]
 
 var factsQuestions = [
@@ -80,7 +80,7 @@ var factsQuestions = [
 	['What is the capital of Malaysia?', /^(k|K)uala (l|L)umpur$/],
 	['What is the currency of Japan?', /(y|Y)en$/],
 	['What is the capital of Indonesia?', /^(j|J)akarta$/],
-	['Name a major language spoken in Peru.', /^((s|S)panish | (e|E)spanol)$/],
+	['Name a major language spoken in Peru.', /^(s|S)panish$/],
 	['What is the capital of Australia?', /^(c|C)anberra$/]
 ]
 
@@ -110,11 +110,10 @@ function question(type)
 				else 
 					{
 						if (historyQuestions.length == 0)
-							
 							{
 								closeQuestion();
-							}
-							
+							}				
+						
 						else
 							{
 								var qIndex = Math.floor(Math.random() * historyQuestions.length);
